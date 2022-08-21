@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <script src="https://pixijs.download/release/pixi.js"></script>
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>GraphWarjs</title>
+  </head>
+  <body class="text-center">
+    <h1 id="status" class="text-6xl text-green-600 font-bold"></h1>
+    <div class="game ml-auto mr-auto mt-8 border-4 border-black w-fit"></div>
+    <br />
+    <h1 class="text-2xl">
+      y =
+      <input
+        class="border-2 border-black rounded p-1 focus:bg-slate-50"
+        id="eq"
+      />
+      <button
+        class="p-1 border-black border-2 text-red-600 rounded hover:animate-pulse"
+        onclick="fire()"
+      >
+        Fire
+      </button>
+    </h1>
+  </body>
+</html>
